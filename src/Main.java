@@ -33,5 +33,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         double salary = scanner.nextDouble();
         System.out.println("Tax = R" + tax_calculator(salary));
+        double net_salary = salary - tax_calculator(salary);
+        System.out.println("Net salary per annum = R" + net_salary);
     }
 }
